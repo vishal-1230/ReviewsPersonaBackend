@@ -67,11 +67,13 @@ export const activateCard = async (req, res) => {
     console.log(req.body)
     const card = await Card.findOne({id: req.body.cardId});
     const redirectionUrl = req.body.redirectionUrl;
+    const type = req.body.type;
 
     if (card.manager.equals(req.user._id)) {
         if (card) {
             card.activated = true;
             card.redirectionUrl = redirectionUrl;
+            card.type = type;
             const updatedCard = await card.save();
             res.json(updatedCard);
         } else {
