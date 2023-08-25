@@ -1,0 +1,1204 @@
+[
+  {
+    "id": 8863,
+    "name": "Custom Metallic Card",
+    "slug": "custom-metallic-card",
+    "permalink": "https://personasmartcard.com/product/custom-metallic-card/",
+    "date_created": "2022-09-01T12:08:15",
+    "date_created_gmt": "2022-09-01T10:08:15",
+    "date_modified": "2022-11-21T10:57:18",
+    "date_modified_gmt": "2022-11-21T08:57:18",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>The Persona Smart Business Card is your all in one digital networking tool. The sleekest and most popular product on the market. Tap your Persona Smart Business Card to the back of any NFC compatible smartphone to instantly share:<br />\n- Contact info<br />\n- Social media<br />\n- Websites<br />\n- Pictures and PDFs<br />\n- and MORE</p>\n<p>The other person doesn’t even need the app!</p>\n<p>You can share direct links to 10 social media platforms, websites and online stores, upload images as well as all of your contact details, web addresses, and location.</p>\n<p>Individuals can instantly save your contact card directly to their phone, with a simple tap.</p>\n<p>Cost-effective, the last smart business card you will ever need.</p>\n<p>Change and update your information as often as you want in a matter of seconds.</p>\n<p>ongoing product updates.</p>\n<p>The connect button will automatically share and gather contact details from both parties.</p>\n<p>Upload images to your Persona profile.</p>\n<p>Fully customizable to your brand.</p>\n<p>Save paper and still make connections.</p>\n<p>What's in the box<br />\n1 x Persona Smart Business Card<br />\n1 x Instruction Manual on Box</p>\n",
+    "short_description": "<p>The Persona Smart Business card is the sleekest product on the market.</p>\n<p>It is your all in one digital networking tool.</p>\n<p>Add your own logo to match your business identity.</p>\n",
+    "sku": "",
+    "price": "599",
+    "regular_price": "",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": true,
+    "purchasable": true,
+    "total_sales": 9,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "low_stock_amount": null,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": { "length": "", "width": "", "height": "" },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 678,
+        "name": "Digital Business Cards",
+        "slug": "digital-business-cards"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 8855,
+        "date_created": "2022-09-01T13:56:54",
+        "date_created_gmt": "2022-09-01T09:56:54",
+        "date_modified": "2022-09-01T13:56:54",
+        "date_modified_gmt": "2022-09-01T09:56:54",
+        "src": "https://personasmartcard.com/wp-content/uploads/2022/08/Gold-Custom.jpg",
+        "name": "Gold Custom",
+        "alt": ""
+      },
+      {
+        "id": 8859,
+        "date_created": "2022-09-01T13:57:07",
+        "date_created_gmt": "2022-09-01T09:57:07",
+        "date_modified": "2022-09-01T13:57:07",
+        "date_modified_gmt": "2022-09-01T09:57:07",
+        "src": "https://personasmartcard.com/wp-content/uploads/2022/08/Silver-Custom.jpg",
+        "name": "Silver Custom",
+        "alt": ""
+      },
+      {
+        "id": 8858,
+        "date_created": "2022-09-01T13:57:03",
+        "date_created_gmt": "2022-09-01T09:57:03",
+        "date_modified": "2022-09-01T13:57:03",
+        "date_modified_gmt": "2022-09-01T09:57:03",
+        "src": "https://personasmartcard.com/wp-content/uploads/2022/08/Silver-Back.jpg",
+        "name": "Silver Back",
+        "alt": ""
+      },
+      {
+        "id": 8853,
+        "date_created": "2022-09-01T13:56:49",
+        "date_created_gmt": "2022-09-01T09:56:49",
+        "date_modified": "2022-09-01T13:56:49",
+        "date_modified_gmt": "2022-09-01T09:56:49",
+        "src": "https://personasmartcard.com/wp-content/uploads/2022/08/Gold-Back.jpg",
+        "name": "Gold Back",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 3,
+        "name": "Colour",
+        "position": 0,
+        "visible": true,
+        "variation": true,
+        "options": ["Metallic Gold", "Metallic Silver"]
+      }
+    ],
+    "default_attributes": [],
+    "variations": [8864, 8865],
+    "grouped_products": [],
+    "menu_order": 0,
+    "price_html": "<ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>599<span class=\"decimals-separator\">.00</span></bdi></span>-<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>599<span class=\"decimals-separator\">.00</span></bdi></span></ins><del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>799<span class=\"decimals-separator\">.00</span></bdi></span>-<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>799<span class=\"decimals-separator\">.00</span></bdi></span></del>",
+    "related_ids": [206, 35, 38, 8666],
+    "meta_data": [
+      {
+        "id": 38023,
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      { "id": 38024, "key": "_wp_page_template", "value": "default" },
+      { "id": 38025, "key": "_yoast_wpseo_content_score", "value": "60" },
+      { "id": 38026, "key": "_yoast_wpseo_focuskeywords", "value": "" },
+      { "id": 38027, "key": "_yoast_wpseo_keywordsynonyms", "value": "" },
+      {
+        "id": 38028,
+        "key": "_yoast_wpseo_estimated-reading-time-minutes",
+        "value": "1"
+      },
+      { "id": 38029, "key": "_yoast_wpseo_wordproof_timestamp", "value": "" },
+      {
+        "id": 38030,
+        "key": "wcb2bsa_commissions",
+        "value": { "3": "", "5": "", "9": "" }
+      },
+      { "id": 38031, "key": "_selectproduct_layout", "value": "" },
+      { "id": 38032, "key": "woolentor_cart_custom_content", "value": "" },
+      { "id": 38033, "key": "woolentor_total_stock_quantity", "value": "" },
+      { "id": 38034, "key": "_saleflash_text", "value": "New" },
+      { "id": 38035, "key": "_wc_facebook_commerce_enabled", "value": "no" },
+      { "id": 38036, "key": "product_featured_image", "value": "default" },
+      {
+        "id": 38037,
+        "key": "_product_featured_image",
+        "value": "field_ce425b914e4c"
+      },
+      { "id": 38038, "key": "product_template", "value": "default" },
+      {
+        "id": 38039,
+        "key": "_product_template",
+        "value": "field_915600a599ca"
+      },
+      {
+        "id": 38040,
+        "key": "wpseo_global_identifier_values",
+        "value": {
+          "gtin8": "",
+          "gtin12": "",
+          "gtin13": "",
+          "gtin14": "",
+          "isbn": "",
+          "mpn": ""
+        }
+      },
+      { "id": 38041, "key": "_jet_woo_template", "value": "" },
+      { "id": 38042, "key": "_template_type", "value": "default" },
+      {
+        "id": 38043,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": "678"
+      },
+      { "id": 38044, "key": "woolentor_views_count_product", "value": "257" },
+      {
+        "id": 38045,
+        "key": "_jetpack_related_posts_cache",
+        "value": {
+          "414c5e39686b80472dfd19eb68d5cbda": {
+            "expires": 1677190717,
+            "payload": [{ "id": 35 }, { "id": 38 }]
+          }
+        }
+      },
+      {
+        "id": 38103,
+        "key": "fb_product_group_id",
+        "value": "5393689540717536"
+      },
+      { "id": 39196, "key": "uap-woo-wsr-type", "value": "flat" },
+      { "id": 39197, "key": "uap-woo-wsr-value", "value": "150" },
+      { "id": 39198, "key": "uap_landing_page_affiliate_id", "value": "" }
+    ],
+    "stock_status": "instock",
+    "has_options": true,
+    "_links": {
+      "self": [
+        { "href": "https://personasmartcard.com/wp-json/wc/v3/products/8863" }
+      ],
+      "collection": [
+        { "href": "https://personasmartcard.com/wp-json/wc/v3/products" }
+      ]
+    }
+  },
+  {
+    "id": 8666,
+    "name": "Standard Metallic Card",
+    "slug": "metallic-card",
+    "permalink": "https://personasmartcard.com/product/metallic-card/",
+    "date_created": "2022-08-25T14:38:10",
+    "date_created_gmt": "2022-08-25T12:38:10",
+    "date_modified": "2022-11-21T10:58:04",
+    "date_modified_gmt": "2022-11-21T08:58:04",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>The Persona Smart Business Card is your all in one digital networking tool. The sleekest and most popular product on the market. Tap your Persona Smart Business Card to the back of any NFC compatible smartphone to instantly share:<br />\n- Contact info<br />\n- Social media<br />\n- Websites<br />\n- Pictures and PDFs<br />\n- and MORE</p>\n<p>The other person doesn’t even need the app!</p>\n<p>You can share direct links to 10 social media platforms, websites and online stores, upload images as well as all of your contact details, web addresses, and location.</p>\n<p>Individuals can instantly save your contact card directly to their phone, with a simple tap.</p>\n<p>Cost-effective, the last smart business card you will ever need.</p>\n<p>Change and update your information as often as you want in a matter of seconds.</p>\n<p>ongoing product updates.</p>\n<p>The connect button will automatically share and gather contact details from both parties.</p>\n<p>Upload images to your Persona profile.</p>\n<p>Fully customisable to your brand.</p>\n<p>Save paper and still make connections.</p>\n<p>What's in the box<br />\n1 x Persona Smart Business Card<br />\n1 x Instruction Manual on Box</p>\n",
+    "short_description": "<p>The Persona Smart Business card is the sleekest product on the market.</p>\n<p>It is your all in one digital networking tool.</p>\n",
+    "sku": "",
+    "price": "499",
+    "regular_price": "",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": true,
+    "purchasable": true,
+    "total_sales": 1,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "low_stock_amount": null,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": { "length": "", "width": "", "height": "" },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "5.00",
+    "rating_count": 1,
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 678,
+        "name": "Digital Business Cards",
+        "slug": "digital-business-cards"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 8861,
+        "date_created": "2022-09-01T13:57:13",
+        "date_created_gmt": "2022-09-01T09:57:13",
+        "date_modified": "2022-09-01T13:57:13",
+        "date_modified_gmt": "2022-09-01T09:57:13",
+        "src": "https://personasmartcard.com/wp-content/uploads/2022/08/Silver-Standard.jpg",
+        "name": "Silver Standard",
+        "alt": ""
+      },
+      {
+        "id": 8857,
+        "date_created": "2022-09-01T13:57:00",
+        "date_created_gmt": "2022-09-01T09:57:00",
+        "date_modified": "2022-09-01T13:57:00",
+        "date_modified_gmt": "2022-09-01T09:57:00",
+        "src": "https://personasmartcard.com/wp-content/uploads/2022/08/Gold-Standard.jpg",
+        "name": "Gold Standard",
+        "alt": ""
+      },
+      {
+        "id": 8856,
+        "date_created": "2022-09-01T13:56:57",
+        "date_created_gmt": "2022-09-01T09:56:57",
+        "date_modified": "2022-09-01T13:56:57",
+        "date_modified_gmt": "2022-09-01T09:56:57",
+        "src": "https://personasmartcard.com/wp-content/uploads/2022/08/Gold-Front.jpg",
+        "name": "Gold Front",
+        "alt": ""
+      },
+      {
+        "id": 8860,
+        "date_created": "2022-09-01T13:57:10",
+        "date_created_gmt": "2022-09-01T09:57:10",
+        "date_modified": "2022-09-01T13:57:10",
+        "date_modified_gmt": "2022-09-01T09:57:10",
+        "src": "https://personasmartcard.com/wp-content/uploads/2022/08/Silver-Front.jpg",
+        "name": "Silver Front",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 3,
+        "name": "Colour",
+        "position": 0,
+        "visible": true,
+        "variation": true,
+        "options": ["Metallic Gold", "Metallic Silver"]
+      }
+    ],
+    "default_attributes": [],
+    "variations": [8667, 8668],
+    "grouped_products": [],
+    "menu_order": 0,
+    "price_html": "<ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>499<span class=\"decimals-separator\">.00</span></bdi></span>-<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>499<span class=\"decimals-separator\">.00</span></bdi></span></ins><del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>599<span class=\"decimals-separator\">.00</span></bdi></span>-<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>599<span class=\"decimals-separator\">.00</span></bdi></span></del>",
+    "related_ids": [35, 206, 38, 8863],
+    "meta_data": [
+      {
+        "id": 35865,
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      { "id": 35938, "key": "_wp_page_template", "value": "default" },
+      { "id": 35939, "key": "_yoast_wpseo_content_score", "value": "60" },
+      { "id": 35940, "key": "_yoast_wpseo_focuskeywords", "value": "" },
+      { "id": 35941, "key": "_yoast_wpseo_keywordsynonyms", "value": "" },
+      {
+        "id": 35942,
+        "key": "_yoast_wpseo_estimated-reading-time-minutes",
+        "value": "1"
+      },
+      { "id": 35943, "key": "_yoast_wpseo_wordproof_timestamp", "value": "" },
+      {
+        "id": 35944,
+        "key": "wcb2bsa_commissions",
+        "value": { "3": "", "5": "", "9": "" }
+      },
+      { "id": 35945, "key": "_selectproduct_layout", "value": "" },
+      { "id": 35946, "key": "woolentor_cart_custom_content", "value": "" },
+      { "id": 35947, "key": "woolentor_total_stock_quantity", "value": "" },
+      { "id": 35948, "key": "_saleflash_text", "value": "New" },
+      { "id": 35950, "key": "_wc_facebook_commerce_enabled", "value": "no" },
+      {
+        "id": 35951,
+        "key": "fb_product_group_id",
+        "value": "5470523409670785"
+      },
+      { "id": 35952, "key": "product_featured_image", "value": "default" },
+      {
+        "id": 35953,
+        "key": "_product_featured_image",
+        "value": "field_ce425b914e4c"
+      },
+      { "id": 35954, "key": "product_template", "value": "default" },
+      {
+        "id": 35955,
+        "key": "_product_template",
+        "value": "field_915600a599ca"
+      },
+      {
+        "id": 35960,
+        "key": "wpseo_global_identifier_values",
+        "value": {
+          "gtin8": "",
+          "gtin12": "",
+          "gtin13": "",
+          "gtin14": "",
+          "isbn": "",
+          "mpn": ""
+        }
+      },
+      { "id": 35961, "key": "_jet_woo_template", "value": "" },
+      { "id": 35962, "key": "_template_type", "value": "default" },
+      {
+        "id": 35963,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": "678"
+      },
+      { "id": 35964, "key": "woolentor_views_count_product", "value": "314" },
+      {
+        "id": 36064,
+        "key": "_jetpack_related_posts_cache",
+        "value": {
+          "32b0bf150bb6bd30c74ed5fafdacd61f": {
+            "expires": 1677844264,
+            "payload": [{ "id": 35 }, { "id": 8863 }, { "id": 38 }]
+          }
+        }
+      },
+      { "id": 39199, "key": "uap-woo-wsr-type", "value": "flat" },
+      { "id": 39200, "key": "uap-woo-wsr-value", "value": "100" },
+      { "id": 39201, "key": "uap_landing_page_affiliate_id", "value": "" }
+    ],
+    "stock_status": "instock",
+    "has_options": true,
+    "_links": {
+      "self": [
+        { "href": "https://personasmartcard.com/wp-json/wc/v3/products/8666" }
+      ],
+      "collection": [
+        { "href": "https://personasmartcard.com/wp-json/wc/v3/products" }
+      ]
+    }
+  },
+  {
+    "id": 206,
+    "name": "Custom Card",
+    "slug": "customcard",
+    "permalink": "https://personasmartcard.com/product/customcard/",
+    "date_created": "2021-12-18T11:22:51",
+    "date_created_gmt": "2021-12-18T09:22:51",
+    "date_modified": "2022-12-03T13:00:12",
+    "date_modified_gmt": "2022-12-03T11:00:12",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>The Persona Smart Business Card is your all in one digital networking tool. The sleekest and most popular product on the market. Tap your Persona Smart Business Card to the back of any NFC compatible smartphone to instantly share:<br />\n- Contact info<br />\n- Social media<br />\n- Websites<br />\n- Pictures and PDFs<br />\n- and MORE</p>\n<p>The other person doesn’t even need the app!</p>\n<p>You can share direct links to 10 social media platforms, websites and online stores, upload images as well as all of your contact details, web addresses, and location.</p>\n<p>Individuals can instantly save your contact card directly to their phone, with a simple tap.</p>\n<p>Cost-effective, the last smart business card you will ever need.</p>\n<p>Change and update your information as often as you want in a matter of seconds.</p>\n<p>ongoing product updates.</p>\n<p>The connect button will automatically share and gather contact details from both parties.</p>\n<p>Upload images to your Persona profile.</p>\n<p>Fully customizable to your brand.</p>\n<p>Save paper and still make connections.</p>\n<p>What's in the box<br />\n1 x Persona Smart Business Card<br />\n1 x Instruction Manual on Box</p>\n",
+    "short_description": "<p>The Persona Smart Business card is the sleekest product on the market.</p>\n<p>It is your all in one digital networking tool.</p>\n<p>Add your own logo to match your business identity.</p>\n",
+    "sku": "",
+    "price": "599",
+    "regular_price": "",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": true,
+    "purchasable": true,
+    "total_sales": 9,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "low_stock_amount": null,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": { "length": "", "width": "", "height": "" },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "5.00",
+    "rating_count": 1,
+    "upsell_ids": [202],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 678,
+        "name": "Digital Business Cards",
+        "slug": "digital-business-cards"
+      }
+    ],
+    "tags": [
+      { "id": 10, "name": "Connect", "slug": "connect" },
+      { "id": 15, "name": "Custom", "slug": "custom" },
+      { "id": 8, "name": "Digital", "slug": "digital" },
+      { "id": 48, "name": "nfc", "slug": "nfc" },
+      { "id": 11, "name": "Persona", "slug": "persona" },
+      { "id": 7, "name": "Smart card", "slug": "smart-card" },
+      { "id": 9, "name": "Tap", "slug": "tap" }
+    ],
+    "images": [
+      {
+        "id": 197,
+        "date_created": "2021-12-18T12:05:01",
+        "date_created_gmt": "2021-12-18T10:05:01",
+        "date_modified": "2022-01-24T18:08:46",
+        "date_modified_gmt": "2022-01-24T14:08:46",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/Custom-Black.png",
+        "name": "Persona Custom smart digital business cards",
+        "alt": "Persona Custom smart digital business cards"
+      },
+      {
+        "id": 200,
+        "date_created": "2021-12-18T12:08:37",
+        "date_created_gmt": "2021-12-18T10:08:37",
+        "date_modified": "2022-01-24T18:07:54",
+        "date_modified_gmt": "2022-01-24T14:07:54",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/Custom-white-1.png",
+        "name": "Persona Custom smart digital business cards",
+        "alt": "Persona Custom smart digital business cards"
+      },
+      {
+        "id": 196,
+        "date_created": "2021-12-18T12:04:55",
+        "date_created_gmt": "2021-12-18T10:04:55",
+        "date_modified": "2022-01-24T18:16:09",
+        "date_modified_gmt": "2022-01-24T14:16:09",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/Cards-Together.png",
+        "name": "",
+        "alt": ""
+      },
+      {
+        "id": 197,
+        "date_created": "2021-12-18T12:05:01",
+        "date_created_gmt": "2021-12-18T10:05:01",
+        "date_modified": "2022-01-24T18:08:46",
+        "date_modified_gmt": "2022-01-24T14:08:46",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/Custom-Black.png",
+        "name": "Persona Custom smart digital business cards",
+        "alt": "Persona Custom smart digital business cards"
+      }
+    ],
+    "attributes": [
+      {
+        "id": 3,
+        "name": "Colour",
+        "position": 1,
+        "visible": true,
+        "variation": true,
+        "options": ["Matte Black", "Matte White"]
+      }
+    ],
+    "default_attributes": [],
+    "variations": [207],
+    "grouped_products": [],
+    "menu_order": 2,
+    "price_html": "<ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>599<span class=\"decimals-separator\">.00</span></bdi></span>-<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>599<span class=\"decimals-separator\">.00</span></bdi></span></ins><del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>699<span class=\"decimals-separator\">.00</span></bdi></span>-<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>699<span class=\"decimals-separator\">.00</span></bdi></span></del>",
+    "related_ids": [38, 8863, 35, 8666],
+    "meta_data": [
+      { "id": 1389, "key": "_wp_page_template", "value": "default" },
+      { "id": 1390, "key": "rwpp_sortorder_26", "value": "0" },
+      { "id": 1391, "key": "zakeke_configurator_enabled", "value": "no" },
+      { "id": 1450, "key": "zakeke_enabled", "value": "yes" },
+      { "id": 1983, "key": "shopengine_product_views_count", "value": "384" },
+      { "id": 2065, "key": "_yoast_wpseo_is_cornerstone", "value": "1" },
+      {
+        "id": 3278,
+        "key": "bdp_single_settings",
+        "value": {
+          "bdp_single_post_open_icon": "fas fa-plus",
+          "bdp_single_post_close_icon": "fas fa-minus",
+          "bdp_single_template_titlebackcolor": ""
+        }
+      },
+      {
+        "id": 3280,
+        "key": "_yoast_wpseo_focuskeywords",
+        "value": "[{\"keyword\":\"custom design business cards\",\"score\":\"ok\"},{\"keyword\":\"custom business card \",\"score\":\"bad\"},{\"keyword\":\"make custom business cards\",\"score\":\"bad\"},{\"keyword\":\"business card custom design online\",\"score\":\"bad\"}]"
+      },
+      {
+        "id": 3281,
+        "key": "_yoast_wpseo_keywordsynonyms",
+        "value": "[\"customized business cards\",\"\",\"\",\"\",\"\"]"
+      },
+      {
+        "id": 3282,
+        "key": "_yoast_wpseo_estimated-reading-time-minutes",
+        "value": "1"
+      },
+      { "id": 3283, "key": "_backorder_max_limit", "value": "" },
+      { "id": 3284, "key": "_backorder_available_date", "value": "" },
+      { "id": 3285, "key": "_wc_facebook_commerce_enabled", "value": "no" },
+      {
+        "id": 3287,
+        "key": "wpseo_global_identifier_values",
+        "value": {
+          "gtin8": "",
+          "gtin12": "",
+          "gtin13": "",
+          "gtin14": "",
+          "isbn": "",
+          "mpn": ""
+        }
+      },
+      {
+        "id": 3904,
+        "key": "_yoast_wpseo_focuskw",
+        "value": "Digital business cards"
+      },
+      {
+        "id": 3905,
+        "key": "_yoast_wpseo_metadesc",
+        "value": "Customised Persona business cards that match your business identity. Paint a picture of who you are and what sets you apart."
+      },
+      { "id": 3907, "key": "fb_product_group_id", "value": "4933925230000410" },
+      {
+        "id": 4596,
+        "key": "_elementor_template_type",
+        "value": "product-post"
+      },
+      { "id": 4597, "key": "_elementor_version", "value": "3.5.6" },
+      { "id": 4598, "key": "_elementor_pro_version", "value": "3.5.2" },
+      { "id": 4755, "key": "_yoast_wpseo_title", "value": "%%title%%" },
+      {
+        "id": 11132,
+        "key": "wcb2bsa_commissions",
+        "value": { "3": "16.6", "5": "16.68", "9": "" }
+      },
+      { "id": 28466, "key": "affwp_affiliate_submission_forms", "value": [] },
+      {
+        "id": 28479,
+        "key": "_elementor_data",
+        "value": "[{\"id\":\"b7ea3b9\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"52afa80c\",\"elType\":\"column\",\"settings\":{\"_column_size\":100},\"elements\":[{\"id\":\"c1c1bdd\",\"elType\":\"widget\",\"settings\":{\"editor\":\"Share your Persona Profile directly to any smart device with just a single tap of your customised Persona Smart Digital Business Card.\\r\\n\\r\\nShare your contact details, social media links, websites, location, and more with just one tap.\\r\\n\\r\\nIndividuals can instantly save your contact details directly to their phone, with a simple tap\\r\\n\\r\\nCost-effective, the last smart business card you will ever need\\r\\n\\r\\nChange and update your information as often as you want in a matter of minutes\\r\\n\\r\\nFree upgoing product updates\\r\\n\\r\\nThe lead generation mode (connect) will automatically share and gather contact details from both parties\\r\\n\\r\\nUpload images to your Persona profile\\r\\n\\r\\nFully customizable to your brand\\r\\n\\r\\nSave paper and still make connections\\r\\n\\r\\n<strong>Customize your business card with your business logo<\\/strong>\"},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":false}],\"isInner\":false}]"
+      },
+      { "id": 28488, "key": "_elementor_page_assets", "value": [] },
+      { "id": 28519, "key": "_yoast_wpseo_linkdex", "value": "36" },
+      { "id": 28522, "key": "_yoast_wpseo_content_score", "value": "60" },
+      {
+        "id": 28551,
+        "key": "_yoast_post_redirect_info",
+        "value": {
+          "origin": "product/persona-custom-business-cards",
+          "target": "product/customcard",
+          "type": 301,
+          "format": "plain"
+        }
+      },
+      {
+        "id": 28552,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": "678"
+      },
+      {
+        "id": 32395,
+        "key": "_jetpack_related_posts_cache",
+        "value": {
+          "32b0bf150bb6bd30c74ed5fafdacd61f": {
+            "expires": 1677818976,
+            "payload": [{ "id": 35 }, { "id": 8863 }, { "id": 38 }]
+          }
+        }
+      },
+      {
+        "id": 35623,
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      { "id": 35641, "key": "_yoast_wpseo_wordproof_timestamp", "value": "" },
+      { "id": 35650, "key": "product_featured_image", "value": "default" },
+      {
+        "id": 35651,
+        "key": "_product_featured_image",
+        "value": "field_ce425b914e4c"
+      },
+      { "id": 35652, "key": "product_template", "value": "default" },
+      {
+        "id": 35653,
+        "key": "_product_template",
+        "value": "field_915600a599ca"
+      },
+      { "id": 35797, "key": "woolentor_views_count_product", "value": "313" },
+      { "id": 37277, "key": "_selectproduct_layout", "value": "" },
+      { "id": 37278, "key": "woolentor_cart_custom_content", "value": "" },
+      { "id": 37279, "key": "woolentor_total_stock_quantity", "value": "" },
+      { "id": 37280, "key": "_saleflash_text", "value": "" },
+      { "id": 39202, "key": "uap-woo-wsr-type", "value": "flat" },
+      { "id": 39203, "key": "uap-woo-wsr-value", "value": "150" },
+      { "id": 39204, "key": "uap_landing_page_affiliate_id", "value": "" }
+    ],
+    "stock_status": "instock",
+    "has_options": true,
+    "_links": {
+      "self": [
+        { "href": "https://personasmartcard.com/wp-json/wc/v3/products/206" }
+      ],
+      "collection": [
+        { "href": "https://personasmartcard.com/wp-json/wc/v3/products" }
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "name": "Standard Card",
+    "slug": "standardcard",
+    "permalink": "https://personasmartcard.com/product/standardcard/",
+    "date_created": "2021-12-14T20:49:19",
+    "date_created_gmt": "2021-12-14T18:49:19",
+    "date_modified": "2022-11-21T11:01:41",
+    "date_modified_gmt": "2022-11-21T09:01:41",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>The Persona Smart Business Card is your all in one digital networking tool. The sleekest and most popular product on the market. Tap your Persona Smart Business Card to the back of any NFC compatible smartphone to instantly share:<br />\n- Contact info<br />\n- Social media<br />\n- Websites<br />\n- Pictures and PDFs<br />\n- and MORE</p>\n<p>The other person doesn’t even need the app!</p>\n<p>You can share direct links to 10 social media platforms, websites and online stores, upload images as well as all of your contact details, web addresses, and location.</p>\n<p>Individuals can instantly save your contact card directly to their phone, with a simple tap.</p>\n<p>Cost-effective, the last smart business card you will ever need.</p>\n<p>Change and update your information as often as you want in a matter of seconds.</p>\n<p>ongoing product updates.</p>\n<p>The connect button will automatically share and gather contact details from both parties.</p>\n<p>Upload images to your Persona profile.</p>\n<p>Fully customizable to your brand.</p>\n<p>Save paper and still make connections.</p>\n<p>What's in the box<br />\n1 x Persona Smart Business Card<br />\n1 x Instruction Manual on Box</p>\n<p>&nbsp;</p>\n",
+    "short_description": "<p>The Persona Smart Business card is the sleekest product on the market.</p>\n<p>It is your all in one digital networking tool.</p>\n",
+    "sku": "",
+    "price": "399",
+    "regular_price": "",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": true,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "low_stock_amount": null,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": { "length": "", "width": "", "height": "" },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "5.00",
+    "rating_count": 2,
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 678,
+        "name": "Digital Business Cards",
+        "slug": "digital-business-cards"
+      }
+    ],
+    "tags": [
+      { "id": 10, "name": "Connect", "slug": "connect" },
+      { "id": 8, "name": "Digital", "slug": "digital" },
+      { "id": 48, "name": "nfc", "slug": "nfc" },
+      { "id": 11, "name": "Persona", "slug": "persona" },
+      { "id": 7, "name": "Smart card", "slug": "smart-card" },
+      { "id": 13, "name": "Standard", "slug": "standard" },
+      { "id": 9, "name": "Tap", "slug": "tap" }
+    ],
+    "images": [
+      {
+        "id": 91,
+        "date_created": "2021-12-15T18:39:30",
+        "date_created_gmt": "2021-12-15T16:39:30",
+        "date_modified": "2021-12-15T18:39:30",
+        "date_modified_gmt": "2021-12-15T16:39:30",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/Standard-Black.png",
+        "name": "Standard Black",
+        "alt": ""
+      },
+      {
+        "id": 91,
+        "date_created": "2021-12-15T18:39:30",
+        "date_created_gmt": "2021-12-15T16:39:30",
+        "date_modified": "2021-12-15T18:39:30",
+        "date_modified_gmt": "2021-12-15T16:39:30",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/Standard-Black.png",
+        "name": "Standard Black",
+        "alt": ""
+      },
+      {
+        "id": 99,
+        "date_created": "2021-12-15T18:55:04",
+        "date_created_gmt": "2021-12-15T16:55:04",
+        "date_modified": "2021-12-15T18:55:04",
+        "date_modified_gmt": "2021-12-15T16:55:04",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/White-Standard-Front.png",
+        "name": "White Standard Front",
+        "alt": ""
+      },
+      {
+        "id": 8650,
+        "date_created": "2022-08-25T13:56:53",
+        "date_created_gmt": "2022-08-25T09:56:53",
+        "date_modified": "2022-08-25T13:56:53",
+        "date_modified_gmt": "2022-08-25T09:56:53",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/Front-Black-Standard.png",
+        "name": "Front Black Standard",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 0,
+        "name": "Color",
+        "position": 0,
+        "visible": true,
+        "variation": true,
+        "options": ["Black", "White"]
+      }
+    ],
+    "default_attributes": [],
+    "variations": [92, 93],
+    "grouped_products": [],
+    "menu_order": 1,
+    "price_html": "<ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>399<span class=\"decimals-separator\">.00</span></bdi></span>-<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>399<span class=\"decimals-separator\">.00</span></bdi></span></ins><del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>499<span class=\"decimals-separator\">.00</span></bdi></span>-<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>499<span class=\"decimals-separator\">.00</span></bdi></span></del>",
+    "related_ids": [8863, 38, 8666, 206],
+    "meta_data": [
+      { "id": 83, "key": "wpnux_id", "value": "sample-product-5" },
+      { "id": 456, "key": "_wp_page_template", "value": "default" },
+      { "id": 829, "key": "rwpp_sortorder_26", "value": "0" },
+      { "id": 913, "key": "zakeke_enabled", "value": "no" },
+      { "id": 914, "key": "zakeke_configurator_enabled", "value": "no" },
+      { "id": 1981, "key": "shopengine_product_views_count", "value": "384" },
+      { "id": 2043, "key": "_backorder_max_limit", "value": "" },
+      { "id": 2044, "key": "_backorder_available_date", "value": "" },
+      {
+        "id": 2045,
+        "key": "bdp_single_settings",
+        "value": {
+          "bdp_single_post_open_icon": "fas fa-plus",
+          "bdp_single_post_close_icon": "fas fa-minus",
+          "bdp_single_template_titlebackcolor": ""
+        }
+      },
+      {
+        "id": 2046,
+        "key": "wpseo_global_identifier_values",
+        "value": {
+          "gtin8": "",
+          "gtin12": "",
+          "gtin13": "",
+          "gtin14": "",
+          "isbn": "",
+          "mpn": ""
+        }
+      },
+      { "id": 2048, "key": "_yoast_wpseo_focuskeywords", "value": "[]" },
+      { "id": 2049, "key": "_yoast_wpseo_keywordsynonyms", "value": "[\"\"]" },
+      {
+        "id": 2050,
+        "key": "_yoast_wpseo_estimated-reading-time-minutes",
+        "value": "1"
+      },
+      { "id": 2074, "key": "_yoast_wpseo_is_cornerstone", "value": "1" },
+      { "id": 3290, "key": "_wc_facebook_commerce_enabled", "value": "no" },
+      { "id": 3291, "key": "fb_product_group_id", "value": "4707495129328725" },
+      {
+        "id": 3651,
+        "key": "_elementor_template_type",
+        "value": "product-post"
+      },
+      { "id": 3652, "key": "_elementor_version", "value": "3.5.4" },
+      { "id": 3653, "key": "_elementor_pro_version", "value": "3.5.2" },
+      {
+        "id": 4736,
+        "key": "_yoast_wpseo_focuskw",
+        "value": "Smart Digital Business Cards"
+      },
+      {
+        "id": 4737,
+        "key": "_yoast_wpseo_title",
+        "value": "%%page%% %%sep%% %%sitename%%"
+      },
+      {
+        "id": 4738,
+        "key": "_yoast_wpseo_metadesc",
+        "value": "Leave a lasting impression, all your social media links, contact details and location when using Persona smart digital card."
+      },
+      {
+        "id": 9643,
+        "key": "_elementor_data",
+        "value": "[{\"id\":\"5cd25bea\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"897fe41\",\"elType\":\"column\",\"settings\":{\"_column_size\":100},\"elements\":[{\"id\":\"48623813\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p style=\\\"text-align: left;\\\">Share your Persona Profile directly to any smart device with just a single tap of your Persona Smart Business Card.<\\/p>\\r\\nShare your contact details, social media links, websites, location, and more with just one tap.\\r\\n\\r\\nIndividuals can instantly save your contact details directly to their phone, with a simple tap\\r\\n\\r\\nCost-effective, the last smart business card you will ever need\\r\\n\\r\\nChange and update your information as often as you want in a matter of minutes\\r\\n\\r\\nFree upgoing product updates\\r\\n\\r\\nThe lead generation mode (connect) will automatically share and gather contact details from both parties\\r\\n\\r\\nUpload images to your Persona profile\\r\\n\\r\\nFully customizable to your brand\\r\\n\\r\\nSave paper and still make connections.\"},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":false}],\"isInner\":false}]"
+      },
+      { "id": 9652, "key": "_elementor_page_assets", "value": [] },
+      {
+        "id": 11137,
+        "key": "wcb2bsa_commissions",
+        "value": { "3": "18.77", "5": "18.77", "9": "" }
+      },
+      { "id": 11138, "key": "_yoast_wpseo_linkdex", "value": "38" },
+      { "id": 11139, "key": "_yoast_wpseo_content_score", "value": "60" },
+      {
+        "id": 35669,
+        "key": "_yoast_post_redirect_info",
+        "value": {
+          "origin": "product/persona-standard-business-card",
+          "target": "product/standardcard",
+          "type": 301,
+          "format": "plain"
+        }
+      },
+      {
+        "id": 35673,
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      {
+        "id": 35677,
+        "key": "_jetpack_related_posts_cache",
+        "value": {
+          "32b0bf150bb6bd30c74ed5fafdacd61f": {
+            "expires": 1677745066,
+            "payload": [{ "id": 8863 }, { "id": 38 }]
+          }
+        }
+      },
+      { "id": 35680, "key": "_yoast_wpseo_wordproof_timestamp", "value": "" },
+      { "id": 35689, "key": "product_featured_image", "value": "default" },
+      {
+        "id": 35690,
+        "key": "_product_featured_image",
+        "value": "field_ce425b914e4c"
+      },
+      { "id": 35691, "key": "product_template", "value": "default" },
+      {
+        "id": 35692,
+        "key": "_product_template",
+        "value": "field_915600a599ca"
+      },
+      { "id": 35803, "key": "woolentor_views_count_product", "value": "343" },
+      { "id": 37244, "key": "_selectproduct_layout", "value": "" },
+      { "id": 37245, "key": "woolentor_cart_custom_content", "value": "" },
+      { "id": 37246, "key": "woolentor_total_stock_quantity", "value": "" },
+      { "id": 37247, "key": "_saleflash_text", "value": "" },
+      { "id": 39205, "key": "uap-woo-wsr-type", "value": "flat" },
+      { "id": 39206, "key": "uap-woo-wsr-value", "value": "100" },
+      { "id": 39211, "key": "uap_landing_page_affiliate_id", "value": "" }
+    ],
+    "stock_status": "instock",
+    "has_options": true,
+    "_links": {
+      "self": [
+        { "href": "https://personasmartcard.com/wp-json/wc/v3/products/35" }
+      ],
+      "collection": [
+        { "href": "https://personasmartcard.com/wp-json/wc/v3/products" }
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "name": "Persona Pixel",
+    "slug": "persona-pixel",
+    "permalink": "https://personasmartcard.com/product/persona-pixel/",
+    "date_created": "2021-12-14T22:49:19",
+    "date_created_gmt": "2021-12-14T20:49:19",
+    "date_modified": "2022-11-21T11:02:40",
+    "date_modified_gmt": "2022-11-21T09:02:40",
+    "type": "variable",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>The Persona Pixel is your all in one digital networking tool. The sleekest and most popular product on the market. Tap your Persona Pixel to the back of any NFC compatible smartphone to instantly share:<br />\n- Contact info<br />\n- Social media<br />\n- Websites<br />\n- Pictures and PDFs<br />\n- and MORE</p>\n<p>The other person doesn’t even need the app!</p>\n<p>You can share direct links to 10 social media platforms, websites and online stores, upload images as well as all of your contact details, web addresses, and location.</p>\n<p>Individuals can instantly save your contact card directly to their phone, with a simple tap.</p>\n<p>Cost-effective, the last smart business card you will ever need.</p>\n<p>Change and update your information as often as you want in a matter of seconds.</p>\n<p>ongoing product updates.</p>\n<p>The connect button will automatically share and gather contact details from both parties.</p>\n<p>Upload images to your Persona profile.</p>\n<p>Fully customisable to your brand.</p>\n<p>Save paper and still make connections.</p>\n<p>What's in the box<br />\n1 x Persona Pixel<br />\n1 x Instruction Manual on Box</p>\n",
+    "short_description": "<p>The Persona Pixel is the sleekest product on the market.</p>\n<p>The Persona Pixel is your smart business card on the back of your phone.</p>\n",
+    "sku": "",
+    "price": "199",
+    "regular_price": "",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "on_sale": true,
+    "purchasable": true,
+    "total_sales": 9,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "low_stock_amount": null,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": { "length": "", "width": "", "height": "" },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "5.00",
+    "rating_count": 1,
+    "upsell_ids": [35],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 678,
+        "name": "Digital Business Cards",
+        "slug": "digital-business-cards"
+      }
+    ],
+    "tags": [
+      { "id": 10, "name": "Connect", "slug": "connect" },
+      { "id": 8, "name": "Digital", "slug": "digital" },
+      { "id": 11, "name": "Persona", "slug": "persona" },
+      { "id": 6, "name": "Pixel", "slug": "pixel" },
+      { "id": 7, "name": "Smart card", "slug": "smart-card" },
+      { "id": 9, "name": "Tap", "slug": "tap" }
+    ],
+    "images": [
+      {
+        "id": 8664,
+        "date_created": "2022-08-25T16:17:44",
+        "date_created_gmt": "2022-08-25T12:17:44",
+        "date_modified": "2022-08-25T16:17:44",
+        "date_modified_gmt": "2022-08-25T12:17:44",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/NFC-Sticker-4.png",
+        "name": "NFC Sticker",
+        "alt": ""
+      },
+      {
+        "id": 64,
+        "date_created": "2021-12-15T09:46:28",
+        "date_created_gmt": "2021-12-15T07:46:28",
+        "date_modified": "2021-12-15T09:46:28",
+        "date_modified_gmt": "2021-12-15T07:46:28",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/NFC-Sticker-2.png",
+        "name": "NFC Sticker 2",
+        "alt": ""
+      },
+      {
+        "id": 65,
+        "date_created": "2021-12-15T09:46:38",
+        "date_created_gmt": "2021-12-15T07:46:38",
+        "date_modified": "2021-12-15T09:46:38",
+        "date_modified_gmt": "2021-12-15T07:46:38",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/NFC-Sticker-3.png",
+        "name": "NFC Sticker 3",
+        "alt": ""
+      },
+      {
+        "id": 63,
+        "date_created": "2021-12-15T09:46:16",
+        "date_created_gmt": "2021-12-15T07:46:16",
+        "date_modified": "2021-12-15T09:46:16",
+        "date_modified_gmt": "2021-12-15T07:46:16",
+        "src": "https://personasmartcard.com/wp-content/uploads/2021/12/NFc-sticker-1.png",
+        "name": "NFc sticker 1",
+        "alt": ""
+      }
+    ],
+    "attributes": [
+      {
+        "id": 0,
+        "name": "Colour",
+        "position": 0,
+        "visible": true,
+        "variation": true,
+        "options": ["White", "Black"]
+      }
+    ],
+    "default_attributes": [],
+    "variations": [75, 74],
+    "grouped_products": [],
+    "menu_order": 0,
+    "price_html": "<ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>199<span class=\"decimals-separator\">.00</span></bdi></span>-<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>199<span class=\"decimals-separator\">.00</span></bdi></span></ins><del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>299<span class=\"decimals-separator\">.00</span></bdi></span>-<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#82;</span>299<span class=\"decimals-separator\">.00</span></bdi></span></del>",
+    "related_ids": [206, 8666, 35, 8863],
+    "meta_data": [
+      { "id": 92, "key": "wpnux_id", "value": "sample-product-8" },
+      { "id": 210, "key": "_elementor_template_type", "value": "wp-post" },
+      { "id": 211, "key": "_elementor_version", "value": "3.5.0" },
+      { "id": 268, "key": "_wp_page_template", "value": "default" },
+      {
+        "id": 370,
+        "key": "_elementor_data",
+        "value": "[{\"id\":\"7c6b083f\",\"elType\":\"section\",\"settings\":[],\"elements\":[{\"id\":\"6d0d97d0\",\"elType\":\"column\",\"settings\":{\"_column_size\":100},\"elements\":[{\"id\":\"6220c6b7\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p>Persona NFC Sticker is the sleekest and most popular product on the market. It's your digital business card, on the back of your phone. Its even works under your (non-metal) case. Tap your Persona NFC sticker to the back of any compatible smartphone to instantly share: - contact info<br \\/>- social media<br \\/>- websites<br \\/>- payment apps<br \\/>- videos and files<br \\/>- and more The other person doesn't need an app.<\\/p>\",\"drop_cap\":\"yes\",\"text_color\":\"#000000\",\"typography_typography\":\"custom\",\"typography_font_family\":\"Arial\",\"typography_font_size\":{\"unit\":\"px\",\"size\":15,\"sizes\":[]},\"typography_font_weight\":\"500\",\"drop_cap_primary_color\":\"#000000\",\"drop_cap_space\":{\"unit\":\"px\",\"size\":3,\"sizes\":[]}},\"elements\":[],\"widgetType\":\"text-editor\"}],\"isInner\":false}],\"isInner\":false}]"
+      },
+      { "id": 377, "key": "_elementor_page_assets", "value": [] },
+      { "id": 813, "key": "rwpp_sortorder_5", "value": "2" },
+      { "id": 820, "key": "rwpp_sortorder_26", "value": "0" },
+      { "id": 1972, "key": "shopengine_product_views_count", "value": "281" },
+      { "id": 2035, "key": "_backorder_max_limit", "value": "" },
+      { "id": 2036, "key": "_backorder_available_date", "value": "" },
+      {
+        "id": 2037,
+        "key": "bdp_single_settings",
+        "value": {
+          "bdp_single_post_open_icon": "fas fa-plus",
+          "bdp_single_post_close_icon": "fas fa-minus",
+          "bdp_single_template_titlebackcolor": ""
+        }
+      },
+      {
+        "id": 2038,
+        "key": "wpseo_global_identifier_values",
+        "value": {
+          "gtin8": "",
+          "gtin12": "",
+          "gtin13": "",
+          "gtin14": "",
+          "isbn": "",
+          "mpn": ""
+        }
+      },
+      { "id": 2039, "key": "_yoast_wpseo_content_score", "value": "60" },
+      { "id": 2040, "key": "_yoast_wpseo_focuskeywords", "value": "[]" },
+      {
+        "id": 2041,
+        "key": "_yoast_wpseo_keywordsynonyms",
+        "value": "[\"digital business card \"]"
+      },
+      {
+        "id": 2042,
+        "key": "_yoast_wpseo_estimated-reading-time-minutes",
+        "value": "1"
+      },
+      { "id": 2075, "key": "_yoast_wpseo_is_cornerstone", "value": "1" },
+      { "id": 3344, "key": "_wc_facebook_commerce_enabled", "value": "no" },
+      { "id": 3345, "key": "fb_product_group_id", "value": "4555314814567607" },
+      {
+        "id": 4641,
+        "key": "_yoast_wpseo_focuskw",
+        "value": "Persona smart digital pixel"
+      },
+      {
+        "id": 4642,
+        "key": "_yoast_wpseo_metadesc",
+        "value": "Persona smart digital Pixel: The Persona smart digital business card on the back of your card. Share your Persona profile instantly."
+      },
+      { "id": 4643, "key": "_yoast_wpseo_linkdex", "value": "38" },
+      {
+        "id": 11140,
+        "key": "wcb2bsa_commissions",
+        "value": { "3": "20", "5": "20", "9": "" }
+      },
+      {
+        "id": 35798,
+        "key": "_jetpack_related_posts_cache",
+        "value": {
+          "32b0bf150bb6bd30c74ed5fafdacd61f": {
+            "expires": 1678267860,
+            "payload": [{ "id": 35 }, { "id": 8863 }]
+          }
+        }
+      },
+      { "id": 35802, "key": "woolentor_views_count_product", "value": "304" },
+      {
+        "id": 35816,
+        "key": "_last_editor_used_jetpack",
+        "value": "classic-editor"
+      },
+      { "id": 35849, "key": "_yoast_wpseo_wordproof_timestamp", "value": "" },
+      { "id": 35850, "key": "_selectproduct_layout", "value": "" },
+      { "id": 35851, "key": "woolentor_cart_custom_content", "value": "" },
+      { "id": 35852, "key": "woolentor_total_stock_quantity", "value": "" },
+      { "id": 35853, "key": "_saleflash_text", "value": "Hot" },
+      { "id": 35854, "key": "product_featured_image", "value": "default" },
+      {
+        "id": 35855,
+        "key": "_product_featured_image",
+        "value": "field_ce425b914e4c"
+      },
+      { "id": 35856, "key": "product_template", "value": "default" },
+      {
+        "id": 35857,
+        "key": "_product_template",
+        "value": "field_915600a599ca"
+      },
+      { "id": 35862, "key": "_jet_woo_template", "value": "" },
+      { "id": 35863, "key": "_template_type", "value": "default" },
+      {
+        "id": 37155,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": "678"
+      },
+      { "id": 39212, "key": "uap-woo-wsr-type", "value": "flat" },
+      { "id": 39213, "key": "uap-woo-wsr-value", "value": "50" },
+      { "id": 39214, "key": "uap_landing_page_affiliate_id", "value": "" }
+    ],
+    "stock_status": "instock",
+    "has_options": true,
+    "_links": {
+      "self": [
+        { "href": "https://personasmartcard.com/wp-json/wc/v3/products/38" }
+      ],
+      "collection": [
+        { "href": "https://personasmartcard.com/wp-json/wc/v3/products" }
+      ]
+    }
+  }
+]
