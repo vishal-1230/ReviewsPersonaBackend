@@ -7,7 +7,7 @@ const cardSchema = new mongoose.Schema({
     manager: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
     device: { type: mongoose.Schema.Types.ObjectId, ref: 'Device' },
     id: { type: String },
-    type: { type: String, required: false },
+    type: { type: String, required: false, default: "" },
     redirectionUrl: { type: String, required: false },
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
     taps: { type: Number, default: 0 },
