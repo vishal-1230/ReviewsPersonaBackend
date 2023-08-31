@@ -3,6 +3,7 @@ import Device from "../models/Device.js";
 import Order from "../models/Order.js";
 import User from "../models/User.js";
 import { WooCommerce } from "../server.js";
+import {logger} from "../server.js"
 
 export const getDevices = async (req, res) => {
     // const devices = await Device.find({});
@@ -16,7 +17,7 @@ export const getDevice = async (req, res) => {
         res.json(device);
     } else {
         res.status(404).json({ message: 'Device not found' });
-        console.log('Device not found');
+        logger.debug('Device not found');
     }
 }
 
@@ -34,11 +35,11 @@ export const linkCard = async (req, res) => {
             res.status(201).json(updatedCard);
         } else {
             res.status(404).json({ message: 'Card not found' });
-            console.log('Card not found');
+            logger.debug('Card not found');
         }
     } catch (error) {
         res.status(404).json({ message: 'Card not found' })
-        console.log("ERROR", error);
+        logger.debug("ERROR", error);
     }
 }
 
@@ -55,16 +56,16 @@ export const unlinkCard = async (req, res) => {
             res.status(200).json(updatedCard);
         } else {
             res.status(404).json({ message: 'Card not found' });
-            console.log('Card not found');
+            logger.debug('Card not found');
         }
     } catch (error) {
         res.status(404).json({ message: 'Card not found' })
-        console.log("ERROR", error);
+        logger.debug("ERROR", error);
     }
 }
 
 export const activateCard = async (req, res) => {
-    console.log(req.body)
+    logger.debug(req.body)
     const card = await Card.findOne({id: req.body.cardId});
     const redirectionUrl = req.body.redirectionUrl;
     const type = req.body.type;
@@ -78,11 +79,11 @@ export const activateCard = async (req, res) => {
             res.json(updatedCard);
         } else {
             res.status(404).json({ message: 'Card not found' });
-            console.log('Card not found');
+            logger.debug('Card not found');
         }
     } else {
         res.status(401).json({ message: 'Unauthorized' });
-        console.log('Unauthorized');
+        logger.debug('Unauthorized');
     }
 }
 
@@ -92,13 +93,13 @@ export const getCards = async (req, res) => {
         res.json(cards);
     } catch (error) {
         res.status(404).json({ message: 'Cards not found' })
-        console.log("ERROR");
+        logger.debug("ERROR");
     }
 }
 
 export const getCard = async (req, res) => {
     const card = await Card.findOne({ id: req.params.id });
-    console.log("Checking card", req.params)
+    logger.debug("Checking card", req.params)
     if (card) {
         card.taps += 1;
         await card.save();
@@ -106,6 +107,6 @@ export const getCard = async (req, res) => {
         res.redirect(card.redirectionUrl);
     } else {
         res.status(404).json({ message: 'Card not found' });
-        console.log('Card not found');
+        logger.debug('Card not found');
     }
 }

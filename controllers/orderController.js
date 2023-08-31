@@ -2,6 +2,7 @@ import Card from "../models/Card.js";
 import Order from "../models/Order.js";
 import User from "../models/User.js";
 import { sendEmail } from "../utils/sendEmail.js";
+import {logger} from "../server.js"
 
 export const getUserOrders = async (req, res) => {
     const orders = await Order.find({ user: req.user._id });
@@ -19,8 +20,8 @@ export const orderCard = async (req, res) => {
     user.address = address;
     await user.save();
 
-    console.log("cart", cart)
-    console.log("total", total)
+    logger.debug("cart", cart)
+    logger.debug("total", total)
 
     const order = {
         name: user.name,

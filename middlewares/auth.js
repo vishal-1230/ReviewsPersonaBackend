@@ -1,19 +1,20 @@
 import mongoose from 'mongoose'
 import jwt from 'jsonwebtoken'
 import User from '../models/User.js'
+import {logger} from "../server.js"
 
 // auth middleware
 export const auth = async (req, res, next) => {
     try {
-        // console.log(req.headers)
+        // logger.debug(req.headers)
         const token = req.headers.token
 
-        // console.log(token)
+        // logger.debug(token)
         if (!token) {
             return res.status(401).json({ message: 'No token, authorization denied' })
         } else {
             jwt.verify(token, process.env.JWT_SECRET, async(err, decoded) => {
-                console.log("Decoded", decoded)
+                logger.debug("Decoded", decoded)
                 if (err) {
                     return res.status(401).json({ message: 'Token is not valid' })
                 } else {
@@ -24,6 +25,6 @@ export const auth = async (req, res, next) => {
             })
         }       
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
     }
 }

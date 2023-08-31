@@ -15,9 +15,16 @@ import path from "path";
 import { auth } from "./middlewares/auth.js";
 import User from "./models/User.js";
 import Card from "./models/Card.js";
+import log4js from "log4js";
 import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
-
 import fs from "fs";
+
+log4js.configure({
+    appenders: { everything: { type: 'file', filename: 'logs.log' } },
+    categories: { default: { appenders: ['everything'], level: 'ALL' } }
+  });
+  
+export const logger = log4js.getLogger();
 
 dotenv.config();
 
@@ -27,8 +34,8 @@ const app = express();
 
 const storage = multer.diskStorage({
     destination(req, file, cb) {
-        console.log("REQ", req)
-        console.log("File", file)
+        logger.debug("REQ", req)
+        logger.debug("File", file)
         const folder = file.fieldname === 'image' ? 'public/uploads' : 'public/logos'
         cb(null, folder)
     },
@@ -54,16 +61,13 @@ const upload = multer({
         checkFileType(file, cb)
     }
 })
+const __dirname = path.resolve();
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/assets", express.static("public"));
-app.get("/", (req, res) => {
-    res.send("API is running...");
-    }
-);
-
+app.use("/admin-logs", express.static("logs.log"))
 
 // woocommercerestapi
 export const WooCommerce = new WooCommerceRestApi.default({
@@ -74,9 +78,9 @@ export const WooCommerce = new WooCommerceRestApi.default({
   });
 
 app.post("/api/users/uploadProfileImage", auth, upload.single('image'), async (req, res) => {
-    console.log("REQs", req.files)
-    console.log(req.body)
-    console.log("REQ", req.file)
+    logger.debug("REQs", req.files)
+    logger.debug(req.body)
+    logger.debug("REQ", req.file)
 
     const user = await User.findById(req.user._id);
     const file = req.file
@@ -88,18 +92,18 @@ app.post("/api/users/uploadProfileImage", auth, upload.single('image'), async (r
             res.status(200).json({updatedUser});
         } else {
             res.status(404).json({ message: 'File not found' });
-            console.log('No file found');
+            logger.debug('No file found');
         }
     } else {
         res.status(404).json({ message: 'User not found' });
-        console.log('User not found');
+        logger.debug('User not found');
     }
 })
 
 app.post("/api/users/uploadCompanyLogo", auth, upload.single('image'), async (req, res) => {
-    console.log("REQs", req.files)
-    console.log(req.body)
-    console.log("REQ", req.file)
+    logger.debug("REQs", req.files)
+    logger.debug(req.body)
+    logger.debug("REQ", req.file)
 
     const user = await User.findById(req.user._id);
     const file = req.file
@@ -111,18 +115,18 @@ app.post("/api/users/uploadCompanyLogo", auth, upload.single('image'), async (re
             res.status(200).json({updatedUser});
         } else {
             res.status(404).json({ message: 'File not found' });
-            console.log('No file found');
+            logger.debug('No file found');
         }
     } else {
         res.status(404).json({ message: 'User not found' });
-        console.log('User not found');
+        logger.debug('User not found');
     }
 })
 
 app.post("/api/users/uploadQrLogo", auth, upload.single('qrLogo'), async (req, res) => {
-    console.log("REQs", req.files)
-    console.log(req.body)
-    console.log("REQ", req.file)
+    logger.debug("REQs", req.files)
+    logger.debug(req.body)
+    logger.debug("REQ", req.file)
 
     const user = await User.findById(req.user._id);
     const file = req.file
@@ -134,11 +138,11 @@ app.post("/api/users/uploadQrLogo", auth, upload.single('qrLogo'), async (req, r
             res.status(200).json({updatedUser});
         } else {
             res.status(404).json({ message: 'File not found' });
-            console.log('No file found');
+            logger.debug('No file found');
         }
     } else {
         res.status(404).json({ message: 'User not found' });
-        console.log('User not found');
+        logger.debug('User not found');
     }
 })
 
@@ -149,12 +153,25 @@ app.use("/api/tasks", taskRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/devices", deviceRoutes);
 
-app.use(notFound);
-app.use(errorHandler);
+app.use(express.static(path.join(__dirname, 'build')));
+
+// app.use(notFound);
+// app.use(errorHandler);
+app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+})
+
+app.get("*", (req, res) => {
+    res.status(404).json({ message: "Page not found" });
+});
+
+app.post("*", (req, res)=>{
+    res.status(404).json({ message: "Page not found" });
+})
 
 const PORT = process.env.PORT || 8000;
 
-app.listen(PORT, console.log(`Server running on port ${PORT}`));
+app.listen(PORT, logger.debug(`Server running on port ${PORT}`));
 
 
 async function createDevice() {
@@ -204,7 +221,7 @@ async function createDevice() {
     })
 
     const createdDevice = await device.save()
-    console.log(createdDevice)
+    logger.debug(createdDevice)
 }
 // createDevice()
 
@@ -225,7 +242,7 @@ async function createDevice() {
     //     // manager: user._id,
     //     device: "64b16ecd6565c8f112ca2b6a",
     // });
-    // console.log("CARD", card)
+    // logger.debug("CARD", card)
 //     user.cards.push(card._id);
 
 async function createCards(n=20) {
@@ -235,7 +252,7 @@ async function createCards(n=20) {
     // devices.map((device) => {
     //     deviceIds.push(device._id)
     // })
-    console.log("Creating", n, "cards")
+    logger.debug("Creating", n, "cards")
 
     await Promise.all(numbers.map(async (user) => {
         // await Promise.all(devices.map(async (device) => {
@@ -246,7 +263,7 @@ async function createCards(n=20) {
         const deviceIdsList = JSON.parse(fs.readFileSync("./cardIdsList.json", "utf-8"));
         deviceIdsList.push(card.id);
         fs.writeFileSync("./cardIdsList.json", JSON.stringify(deviceIdsList));
-        console.log("Created card", card._id)
+        logger.debug("Created card", card._id)
             // user.cards.push(card._id);
         // }))
     }))

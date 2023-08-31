@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import {logger} from "../server.js"
 
 const connectDB = async () => {
     try {
@@ -6,7 +7,7 @@ const connectDB = async () => {
             useUnifiedTopology: true,
             useNewUrlParser: true,
         });
-        console.log(`MongoDB connected: ${conn.connection.host}`);
+        logger.debug(`MongoDB connected: ${conn.connection.host}`);
     } catch (error) {
         console.error(`Error: ${error.message}`);
         process.exit(1);

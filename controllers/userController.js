@@ -12,6 +12,7 @@ import Device from '../models/Device.js';
 import axios from 'axios';
 import VCardJS from 'vcards-js';
 import path from 'path';
+import {logger} from "../server.js"
 
 const generateToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -22,7 +23,7 @@ const generateToken = (id) => {
 export const sendOTP = async (req, res) => {
     const otp = Math.floor(100000 + Math.random() * 900000);
     const { email } = req.body;
-    console.log("REQ BODY", req.body)
+    logger.debug("REQ BODY", req.body)
 
     const user = await User.findOne({ email });
 
@@ -37,14 +38,14 @@ export const sendOTP = async (req, res) => {
     }, ()=>{
         fs.readFile("otps.json", (err, data) => {
             if (err) {
-                console.log(err);
+                logger.debug(err);
             } else {
                 let otps = JSON.parse(data);
                 otps.push({ otp, email });
                 fs.writeFileSync("otps.json", JSON.stringify(otps));
             }
         })
-        console.log("OTP sent")
+        logger.debug("OTP sent")
     })
     res.status(200).json({ message: "OTP sent" });
 }
@@ -53,7 +54,7 @@ export const verifyOTP = async (req, res) => {
     const { email, otp } = req.body;
     fs.readFile("otps.json", (err, data) => {
         if (err) {
-            console.log(err);
+            logger.debug(err);
         } else {
             let otps = JSON.parse(data);
             let found = false;
@@ -72,15 +73,15 @@ export const verifyOTP = async (req, res) => {
 }
 
 export const register = async (req, res) => {
-    console.log("register", req.body)
+    logger.debug("register", req.body)
     const { name, email, password, phone, address } = req.body;
     const userExists = await User.findOne({ email });
     if (userExists) {
         res.status(400);
-        console.log('User already exists');
+        logger.debug('User already exists');
     }
     const hashedPassword = await bcrypt.hash(password, 10);
-    console.log("hashedPassword", hashedPassword)
+    logger.debug("hashedPassword", hashedPassword)
     const user = await User.create({
         name,
         email,
@@ -104,10 +105,10 @@ export const register = async (req, res) => {
 };
 
 export const createProfileByManager = async (req, res) => {
-    console.log("register", req.body)
+    logger.debug("register", req.body)
 
     const manager = await User.findById(req.user._id, "name profilesLinked");
-    console.log("manager", manager)
+    logger.debug("manager", manager)
     const { name, email, phone, designation } = req.body;
 
     let password = Math.random().toString(36).slice(-8);
@@ -115,10 +116,10 @@ export const createProfileByManager = async (req, res) => {
     const userExists = await User.findOne({ email });
     if (userExists) {
         res.status(400);
-        console.log('User already exists');
+        logger.debug('User already exists');
     }
     const hashedPassword = await bcrypt.hash(password, 10);
-    console.log("hashedPassword", hashedPassword)
+    logger.debug("hashedPassword", hashedPassword)
     const user = await User.create({
         name,
         email,
@@ -126,17 +127,17 @@ export const createProfileByManager = async (req, res) => {
         phone,
         role: designation
     });
-    console.log("Created user")
+    logger.debug("Created user")
     if (user) {
         if (manager.profilesLinked != undefined) {
             manager.profilesLinked.push(user._id);
-            console.log("added")
+            logger.debug("added")
         } else {
             manager['profilesLinked'] = [user._id];
-            console.log("created")
+            logger.debug("created")
         }
         await manager.save();
-        console.log("manager", manager)
+        logger.debug("manager", manager)
         res.status(201).json({
             _id: user._id,
             name: user.name,
@@ -150,22 +151,22 @@ export const createProfileByManager = async (req, res) => {
             subject: "Welcome to MyPersona",
             message: `Hey ${name}, Welcome to Persona Smart Business Cards. \nYour Account has been created by ${manager.name} on Persona Dashboard. We have generated a Random Password for you (given below) that you can change after logging in if you want! \nYour temporary password is ${password}.\n\n Login at https://mypersona.io/login \n\n Regards, \n Team Persona`
         }, ()=>{
-            console.log("Email sent")
+            logger.debug("Email sent")
         })
     } else {
         res.status(400).json({ message: 'Invalid user data' });
-        console.log('Invalid user data');
+        logger.debug('Invalid user data');
     }
 };
 
 export const getLinkedProfilesDetail = async (req, res) => {
-    console.log("getLinkedProfilesDetail", req.body)
+    logger.debug("getLinkedProfilesDetail", req.body)
 
     const manager = await User.findById(req.user._id).populate('profilesLinked');
     const linkedProfiles = manager.profilesLinked;
     let profiles = [];
-    console.log("manager", manager)
-    console.log("linkedProfiles", linkedProfiles)
+    logger.debug("manager", manager)
+    logger.debug("linkedProfiles", linkedProfiles)
 
     if (linkedProfiles && linkedProfiles.length > 0) {
         await Promise.all(linkedProfiles.map(async(profile)=>{
@@ -174,29 +175,29 @@ export const getLinkedProfilesDetail = async (req, res) => {
         }))
 
         res.status(200).json(profiles);
-        console.log("profiles", profiles)
+        logger.debug("profiles", profiles)
         
     } else {
         res.status(400).json({ message: 'No profiles found' });
-        console.log('No profiles found');
+        logger.debug('No profiles found');
     }
 }
 
 export const deleteLinkedProfile = async (req, res) => {
-    console.log("deleteLinkedProfile", req.params)
+    logger.debug("deleteLinkedProfile", req.params)
 
     const manager = await User.findById(req.user._id, "name profilesLinked");
     const { profileId } = req.params;
 
     if (manager.profilesLinked != undefined) {
         manager.profilesLinked = manager.profilesLinked.filter((profile)=>profile._id.toString() !== profileId.toString());
-        console.log("added")
+        logger.debug("added")
     } else {
         res.status(400).json({ message: 'No profiles found' });
-        console.log('No profiles found');
+        logger.debug('No profiles found');
     }
     await manager.save();
-    console.log("manager", manager)
+    logger.debug("manager", manager)
     res.status(200).json({ message: 'Profile removed' });
 }
 
@@ -217,18 +218,18 @@ export const login = async (req, res) => {
         });
     } else {
         res.status(401);
-        console.log('Invalid email or password');
+        logger.debug('Invalid email or password');
     }
 }
 
 export const changePassword = async (req, res) => {
-    console.log("changePass", req.body)
+    logger.debug("changePass", req.body)
 
     try {
         const { email, newPassword } = req.body;
     
         const user = await User.findOne({ email });
-        console.log("user", user)
+        logger.debug("user", user)
         if (user) {
             const hashedPassword = await bcrypt.hash(newPassword, 10);
             user.password = hashedPassword;
@@ -238,7 +239,7 @@ export const changePassword = async (req, res) => {
             res.status(400).json({ message: 'Invalid email' });
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(400).json({ message: 'Error Changing Password' });
     }
 
@@ -258,7 +259,7 @@ export const getProfile = async (req, res) => {
 // update about + update socials on card
 export const updateUser = async (req, res) => {
 
-    console.log("updateUser", req.body)
+    logger.debug("updateUser", req.body)
 
     const user = await User.findById(req.user._id);
     const isPro = user.pro;
@@ -267,7 +268,7 @@ export const updateUser = async (req, res) => {
         if (req.body.name) {
             // update in messages in user and other user
             const users = await User.find({ "messages.userId": req.user._id });
-            console.log("users", users)
+            logger.debug("users", users)
             if (users && users.length > 0) {
                 await Promise.all(users.map(async (user) => {
                     user.messages.forEach((message) => {
@@ -337,7 +338,7 @@ export const updateUser = async (req, res) => {
                 user.password = bcrypt.hashSync(req.body.password, 10)
             } else {
                 res.status(401).json({ message: 'Invalid password' });
-                console.log('Invalid password');
+                logger.debug('Invalid password');
                 return
             }
         }
@@ -345,7 +346,7 @@ export const updateUser = async (req, res) => {
         res.status(200).json({updatedUser});
     } else {
         res.status(404).json({ message: 'User not found' });
-        console.log('User not found');
+        logger.debug('User not found');
     }
 }
 
@@ -353,16 +354,16 @@ export const deleteSocial = async (req, res) => {
     
     try{
         const userId = req.user._id;
-        console.log("userId", userId)
+        logger.debug("userId", userId)
         const user = await User.findById(userId);
     
         const social = req.body.social;
-        console.log("Deleting social", social)
+        logger.debug("Deleting social", social)
         if (user) {
             // User.updateOne({ $unset: { [social]: 1 } }, function (err, result) {
             //     if (err) {
             //         res.status(404).json({ message: 'Social not found' });
-            //         console.log('Social not found');
+            //         logger.debug('Social not found');
             //     } else {
             //         res.status(200).json({ message: 'Social deleted', user: result });
             //     }
@@ -373,15 +374,15 @@ export const deleteSocial = async (req, res) => {
                 res.status(200).json({ message: 'Social deleted', user: updatedUser });
             } else {
                 res.status(404).json({ message: 'Social not found' });
-                console.log('Social not found');
+                logger.debug('Social not found');
             }
             // res.status(200).json({ message: 'Social deleted', user: doc });
         } else {
             res.status(404).json({ message: 'User not found' });
-            console.log('User not found');
+            logger.debug('User not found');
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: 'User not found' });
     }
 }
@@ -408,10 +409,10 @@ export const getUserById = async (req, res) => {
         res.status(200).json(user);
     } else {
         res.status(404).json({ message: 'User not found' });
-        console.log('User not found');
+        logger.debug('User not found');
     }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: 'User not found' });
     }
 }
@@ -433,7 +434,7 @@ export const deleteUser = async (req, res) => {
 
 export const addTask_old = async (req, res) => {
     try{
-        console.log("Finding id of user", req.user)
+        logger.debug("Finding id of user", req.user)
         const user = await User.findById(req.user._id);
         const { name, tasks } = req.body;
     
@@ -449,10 +450,10 @@ export const addTask_old = async (req, res) => {
             res.status(200).json(createdTask);
         } else {
             res.status(404).json({ message: 'User not found' });
-            console.log('User not found');
+            logger.debug('User not found');
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: error });
     }
 }
@@ -471,26 +472,26 @@ export const addSubTask_old = async (req, res) => {
         res.status(201).json(task);
     } else {
         res.status(404).json({ message: 'Task not found' });
-        console.log('Task not found');
+        logger.debug('Task not found');
     }
 }
 
 export const getTasks_old = async (req, res) => {
-    console.log("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
-    console.log("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
-    console.log("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
-    console.log("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
-    console.log("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
-    console.log("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
-    console.log("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
-    console.log("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
-    console.log("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
+    logger.debug("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
+    logger.debug("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
+    logger.debug("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
+    logger.debug("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
+    logger.debug("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
+    logger.debug("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
+    logger.debug("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
+    logger.debug("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
+    logger.debug("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLl")
     try {
-        console.log("Finding id of user", req.user)
+        logger.debug("Finding id of user", req.user)
         const tasks = await Task.find({ user: req.user._id });
         res.status(200).json(tasks);
     } catch (error) {
-        // console.log(error)
+        // logger.debug(error)
         res.status(404).json({ message: "OOf" });
     }
 }
@@ -509,10 +510,10 @@ export const markTaskAsDone_old = async (req, res) => {
             res.status(200).json(task);
         } else {
             res.status(404).json({ message: 'Task not found' });
-            console.log('Task not found');
+            logger.debug('Task not found');
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: error });
     }
 }
@@ -527,10 +528,10 @@ export const deleteTask_old = async (req, res) => {
                 res.status(200).json({ message: 'Task removed' });
             } else {
                 res.status(404).json({ message: 'Task not found' });
-                console.log('Task not found');
+                logger.debug('Task not found');
             }
         } catch (error) {
-            console.log(error)
+            logger.debug(error)
             res.status(404).json({ message: error });
         }
 }
@@ -544,7 +545,7 @@ export const deleteTaskId_old = async (req, res) => {
         res.status(200).json({ message: 'Task removed' });
     } else {
         res.status(404).json({ message: 'Task not found' });
-        console.log('Task not found');
+        logger.debug('Task not found');
     }
 }
 
@@ -554,13 +555,13 @@ export const getTasks = async (req, res) => {
         if (user) {
             const tasks = await TaskNew.find({ user: req.user._id });
             res.status(200).json(tasks);
-            console.log("Sent tasks")
+            logger.debug("Sent tasks")
         } else {
             res.status(404).json({ message: 'User not found' });
-            console.log('User not found');
+            logger.debug('User not found');
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: error });
     }
 }
@@ -583,10 +584,10 @@ export const addTask = async (req, res) => {
             res.status(201).json(createdTask);
         } else {
             res.status(404).json({ message: 'User not found' });
-            console.log('User not found');
+            logger.debug('User not found');
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: error });
     }
 }
@@ -604,11 +605,11 @@ export const addToBacklog = async (req, res) => {
                 res.status(200).json(task);
             } else {
                 res.status(404).json({ message: 'Task not found' });
-                console.log('Task not found');
+                logger.debug('Task not found');
             }
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: error });
     }
 }
@@ -626,10 +627,10 @@ export const editTask = async (req, res) => {
             res.status(200).json(task);
         } else {
             res.status(404).json({ message: 'Task not found' });
-            console.log('Task not found');
+            logger.debug('Task not found');
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: error });
     }
 }
@@ -643,10 +644,10 @@ export const markTaskAsDone = async (req, res) => {
             res.status(200).json(task);
         } else {
             res.status(404).json({ message: 'Task not found' });
-            console.log('Task not found');
+            logger.debug('Task not found');
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: error });
     }
 }
@@ -660,17 +661,17 @@ export const deleteTask = async (req, res) => {
             res.status(200).json({ message: 'Task removed' });
         } else {
             res.status(404).json({ message: 'Task not found' });
-            console.log('Task not found');
+            logger.debug('Task not found');
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: error });
     }
 }
 
 export const sendMessage = async (req, res) => {
-    console.log("sender", req.user._id)
-    console.log("receiver", req.body.userId)
+    logger.debug("sender", req.user._id)
+    logger.debug("receiver", req.body.userId)
     try {
         const user = await User.findById(req.user._id);
         const { message, userId } = req.body;
@@ -686,7 +687,7 @@ export const sendMessage = async (req, res) => {
             sender: "user"
 
         }
-        console.log("Setting msg,", newMessage, newMessageReceiver)
+        logger.debug("Setting msg,", newMessage, newMessageReceiver)
         const receiver = await User.findById(userId);
         if (user) {
             let exists = false;
@@ -703,7 +704,7 @@ export const sendMessage = async (req, res) => {
                     messages: [newMessage]
                 });
             }
-            console.log("New user,", user)
+            logger.debug("New user,", user)
             await user.save();
             // res.status(200).json(user);
             if (receiver) {
@@ -725,14 +726,14 @@ export const sendMessage = async (req, res) => {
                 res.status(200).json(user.messages);
             } else {
                 res.status(404).json({ message: 'Receiver not found' });
-                console.log('Receiver not found');
+                logger.debug('Receiver not found');
             }
         } else {
             res.status(404).json({ message: 'Sender not found' });
-            console.log('Sender not found');
+            logger.debug('Sender not found');
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: error });
     }
 }
@@ -744,10 +745,10 @@ export const getMessages = async (req, res) => {
             res.status(200).json(user.messages);
         } else {
             res.status(404).json({ message: 'User not found' });
-            console.log('User not found');
+            logger.debug('User not found');
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: error });
     }
 }
@@ -757,16 +758,16 @@ export const upgradeToPro = async (req, res) => {
         const user = await User.findById(req.user._id);
         if (user) {
             user.pro = true;
-            console.log("Expire", req.body.expiryDate)
+            logger.debug("Expire", req.body.expiryDate)
             user.proExpires = req.body.expiryDate;
             await user.save();
             res.status(200).json(user);
         } else {
             res.status(404).json({ message: 'User not found' });
-            console.log('User not found');
+            logger.debug('User not found');
         }
     } catch (error) {
-        console.log(error)
+        logger.debug(error)
         res.status(404).json({ message: error });
     }
 }
@@ -790,7 +791,7 @@ export const downloadVCard = async (req, res) =>{
         }
         vCard.email = "abcd@gmail.com"
         const __dirname = path.resolve(path.dirname(''));
-        console.log("Dirname", __dirname)
+        logger.debug("Dirname", __dirname)
         vCard.logo.embedFromFile(path.join(__dirname, './controllers/Diploma.png'));
         vCard.photo.embedFromFile(path.join(__dirname, './controllers/Diploma.png'));
         vCard.workPhone = '123-456-7890';
@@ -805,7 +806,7 @@ export const downloadVCard = async (req, res) =>{
         // send the response
         res.send(vCard.getFormattedString());
     } catch (error) {
-        console.log("Error: ", error)
+        logger.debug("Error: ", error)
         res.status(404).json({ message: error });
     }
 }
@@ -826,7 +827,7 @@ export const sendWhatsappTrial = async (req, res) => {
             "Authorization": `Bearer ${key}`
         }
     }).then(async(response) => {
-        console.log(response.data)
+        logger.debug(response.data)
         res.status(200).json(response.data)
     })
 }

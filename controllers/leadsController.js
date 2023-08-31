@@ -1,10 +1,11 @@
 import Card from "../models/Card.js";
 import Lead from "../models/Lead.js";
 import User from "../models/User.js";
+import {logger} from "../server.js"
 
 
 export const editLeadFormTemplate = async (req, res) => {
-    console.log(req.body)
+    logger.debug(req.body)
     const user = await User.findById(req.user._id);
     if (user) {
         user.leadFormTemplate = req.body.leadFormTemplate || user.leadFormTemplate;
@@ -15,7 +16,7 @@ export const editLeadFormTemplate = async (req, res) => {
         });
     } else {
         res.status(404).json({ message: 'User not found' });
-        console.log('User not found');
+        logger.debug('User not found');
     }
 }
 
@@ -23,10 +24,10 @@ export const createLead = async (req, res) => {
 
     const leadData = req.body.leadData;
     const userId = await User.findById(req.body.userId);
-    console.log(userId)
+    logger.debug(userId)
     if (!userId) {
         res.status(404).json({ message: 'User not found' });
-        console.log('User not found');
+        logger.debug('User not found');
         return
     }
     const user = await User.findById(userId).select('-password');
@@ -47,7 +48,7 @@ export const createLead = async (req, res) => {
                 const updatedCard = await card.save();
             } else {
                 res.status(404).json({ message: 'Card not found' });
-                console.log('Card not found');
+                logger.debug('Card not found');
             }
         }
         res.status(200).json(lead);
@@ -67,14 +68,14 @@ export const assignLead = async (req, res) => {
         res.status(200).json(updatedLead);
     } else {
         res.status(404).json({ message: 'Lead or user not found' });
-        console.log('Lead or user not found');
+        logger.debug('Lead or user not found');
     }
 }
 
 export const getLeads = async (req, res) => {    
     const leadsList = await User.findById(req.user._id).populate('leads');
     const leads = await Lead.find({ $or: [{ _id: { $in: leadsList.leads } }, { assignedTo: req.user._id}]});
-    console.log("LEADS", leads)
+    logger.debug("LEADS", leads)
 
     res.status(200).json(leads);
 }
@@ -94,21 +95,21 @@ export const deleteLead = async (req, res) => {
     try {
         const user = await User.findById(req.user._id);
         const lead = await Lead.findById(req.params.id);
-        console.log("Deleting lead", req.params.id)
+        logger.debug("Deleting lead", req.params.id)
     
         if (lead) {
             await Lead.findByIdAndDelete(req.params.id);
-            console.log("Removed lead")
+            logger.debug("Removed lead")
             user.leads.pull(lead._id);
-            console.log("Removed lead from user")
+            logger.debug("Removed lead from user")
             await user.save();
             res.status(200).json({ message: 'Lead removed' });
         } else {
             res.status(404);
-            console.log('Lead not found');
+            logger.debug('Lead not found');
         }
     } catch (error) {
         res.status(404).json({ message: 'Lead not found' })
-        console.log('Lead not found');
+        logger.debug('Lead not found');
     }
 }
