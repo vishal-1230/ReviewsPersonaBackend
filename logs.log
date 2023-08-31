@@ -4,3 +4,95 @@
 [2023-08-27T23:30:27.040] [DEBUG] default - Server running on port 8000
 [2023-08-27T23:31:46.345] [DEBUG] default - MongoDB connected: ac-zeoaqum-shard-00-00.btbmdim.mongodb.net
 [2023-08-27T23:31:46.358] [DEBUG] default - Server running on port 8000
+[2023-08-31T14:09:05.553] [DEBUG] default - MongoDB connected: ac-zeoaqum-shard-00-00.btbmdim.mongodb.net
+[2023-08-31T14:09:05.562] [DEBUG] default - Server running on port 8000
+[2023-08-31T14:09:41.868] [DEBUG] default - register {
+  name: 'Abcd efgh',
+  email: 'abcd@gmail.com',
+  phone: '12121212121212',
+  password: 'Abcd@123'
+}
+[2023-08-31T14:09:42.178] [DEBUG] default - hashedPassword $2a$10$yu4GRxwB/vfhBspXBHRknORjsF4Dov9jlA5N94XqY1kTT2i6rK1pC
+[2023-08-31T14:09:42.679] [DEBUG] default - Decoded { id: '64f051ce8282ba3f8b5a28b8', iat: 1693471182, exp: 1696063182 }
+[2023-08-31T14:09:42.706] [DEBUG] default - Decoded { id: '64f051ce8282ba3f8b5a28b8', iat: 1693471182, exp: 1696063182 }
+[2023-08-31T14:09:42.723] [DEBUG] default - Decoded { id: '64f051ce8282ba3f8b5a28b8', iat: 1693471182, exp: 1696063182 }
+[2023-08-31T14:09:42.822] [DEBUG] default - getLinkedProfilesDetail {}
+[2023-08-31T14:09:42.993] [DEBUG] default - manager {
+  leadFormTemplate: {
+    header: 'Get in touch',
+    fields: [ [Object], [Object], [Object] ],
+    footer: 'We will get back to you as soon as possible.'
+  },
+  _id: new ObjectId("64f051ce8282ba3f8b5a28b8"),
+  email: 'abcd@gmail.com',
+  password: '$2a$10$yu4GRxwB/vfhBspXBHRknORjsF4Dov9jlA5N94XqY1kTT2i6rK1pC',
+  name: 'Abcd efgh',
+  role: 'user',
+  profilesLinked: [],
+  tasks: [],
+  orders: [],
+  cardTaps: 0,
+  pro: false,
+  notifications: [],
+  showLeadForm: true,
+  cardDesign: {
+    profileBackground: '',
+    buttonColor: '',
+    darkMode: false,
+    fontColor: ''
+  },
+  cards: [],
+  leads: [],
+  views: 0,
+  qrLogo: 'logos/persona-p.png',
+  viewsTimings: [],
+  socialConnects: 0,
+  taps: 0,
+  socialsCount: 2,
+  phone: 12121212121212,
+  messages: [],
+  createdAt: 2023-08-31T08:39:42.197Z,
+  updatedAt: 2023-08-31T08:39:42.197Z,
+  __v: 0
+}
+[2023-08-31T14:09:42.995] [DEBUG] default - linkedProfiles []
+[2023-08-31T14:09:42.995] [DEBUG] default - No profiles found
+[2023-08-31T14:09:58.467] [DEBUG] default - Decoded { id: '64f051ce8282ba3f8b5a28b8', iat: 1693471182, exp: 1696063182 }
+[2023-08-31T14:09:58.568] [DEBUG] default - updateUser {
+  leadFormTemplate: {
+    header: 'Get in touch',
+    fields: [ [Object], [Object], [Object] ],
+    footer: 'We will get back to you as soon as possible.'
+  },
+  _id: '64f051ce8282ba3f8b5a28b8',
+  email: 'abcd@gmail.com',
+  name: 'Abcde fgh',
+  role: 'user',
+  profilesLinked: [],
+  tasks: [],
+  orders: [],
+  cardTaps: 0,
+  pro: false,
+  notifications: [],
+  showLeadForm: true,
+  cardDesign: {
+    profileBackground: '',
+    buttonColor: '',
+    darkMode: false,
+    fontColor: ''
+  },
+  cards: [],
+  leads: [],
+  views: 0,
+  qrLogo: 'logos/persona-p.png',
+  viewsTimings: [],
+  socialConnects: 0,
+  taps: 0,
+  socialsCount: 2,
+  phone: 12121212121212,
+  messages: [],
+  createdAt: '2023-08-31T08:39:42.197Z',
+  updatedAt: '2023-08-31T08:39:42.197Z',
+  __v: 0
+}
+[2023-08-31T14:09:58.755] [DEBUG] default - users []
