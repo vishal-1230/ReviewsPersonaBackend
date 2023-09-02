@@ -75,7 +75,7 @@ export const WooCommerce = new WooCommerceRestApi.default({
     consumerKey: "ck_16676d028f9caf2f0ba09063734b93ec0d6fdda5",
     consumerSecret: "cs_7c82b79cbb0a5959e5b8ae7aedaa333b1a852d24",
     version: "wc/v3"
-  });
+});
 
 app.post("/api/users/uploadProfileImage", auth, upload.single('image'), async (req, res) => {
     logger.debug("REQs", req.files)
